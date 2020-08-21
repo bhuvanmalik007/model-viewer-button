@@ -15,6 +15,8 @@ modelViewerScript.onload = function () {
   // makeButton function with all the logic
   window.makeButton = (androidSrc, iosSrc, divContainer) => {
     const modelViewerElement = document.createElement("model-viewer");
+
+    // Other attributes present in the original library can be added like below
     modelViewerElement.src = androidSrc;
     modelViewerElement.setAttribute("ios-src", iosSrc);
     modelViewerElement.setAttribute("ar", "");
